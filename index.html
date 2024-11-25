@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Alphy AI - Your intelligent Text Summarization Assistant. Easily summarize text or documents with our AI-powered tool.">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header Section -->
+        <header>
+            <div class="header-container">
+                <h1>Alphy AI 🤖</h1>
+                <p>Your intelligent Text Summarization Assistant</p>
+            </div>
+            <canvas id="header-canvas" aria-hidden="true"></canvas>
+        </header>
+        <script src="js/header-effects.js"></script>
+
+        <!-- Main Content -->
+        <main>
+            <div id="summarize-container">
+                <section id="input-section" aria-labelledby="input-section-header">
+                    <h2 id="input-section-header">Original Text :</h2>
+                    <textarea id="text-input" placeholder="Enter or paste text here..."
+                        aria-label="Text input for summarization"></textarea>
+                    <div class="button-group">
+                        <label for="file-upload" class="upload-label" aria-label="Upload text file">Upload File</label>
+                        <input type="file" id="file-upload" accept=".txt,.docx,.pdf" aria-label="Upload text file">
+                        <button id="summarize-button" class="futuristic-button">Summarize</button>
+                    </div>
+                </section>
+
+                <section id="output-section" aria-labelledby="output-section-header">
+<h2>Summary:</h2>
+                    <div id="summary-output" class="futuristic-card" role="region" aria-live="polite">Your summary will
+                        appear here...</div>
+                </section>
+                    </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
